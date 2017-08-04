@@ -7,7 +7,7 @@ bot = Bot(api_token=TG_TOKEN)
 
 
 @bot.command(r"ping")
-def ping(chat: Chat):
+def ping(chat: Chat, match):
     return chat.reply('pong')
 
 
